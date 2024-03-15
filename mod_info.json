@@ -1,0 +1,21 @@
+{
+    "id":"presmattdamon_takenoprisoners", # For the convenience of troubleshooters, include your name and the mod name, not just an acronym.
+	"name":"Take No Prisoners", # Displayed to the player
+	"author":"President Matt Damon",
+    "utility":"false",
+	"version":"0.16.1",
+	"description":"Capture officers and negotiate",
+    "gameVersion": "0.97a",
+  	"jars":["jars/TakeNoPrisoners.jar"],
+  	"modPlugin":"takenoprisoners.TakeNoPrisonersModPlugin",
+	"dependencies": [
+        {
+            "id": "MagicLib",
+            "name": "MagicLib"
+        },
+		{
+			"id": "lw_lazylib",
+			"name": "LazyLib"
+		}
+    ],
+}

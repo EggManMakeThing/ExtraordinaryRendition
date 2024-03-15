@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TakeNoPrisoners">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jars/TakeNoPrisoners.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
