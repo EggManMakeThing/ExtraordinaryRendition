@@ -1,21 +1,28 @@
 {
-    "id":"presmattdamon_takenoprisoners", # For the convenience of troubleshooters, include your name and the mod name, not just an acronym.
-	"name":"Take No Prisoners", # Displayed to the player
-	"author":"President Matt Damon",
+    "id":"ExtraordinaryRendition", # For the convenience of troubleshooters, include your name and the mod name, not just an acronym.
+	"name":"Extraordinary Rendition", # Displayed to the player
+	"author":"potatomonitor, at least temporarily",
     "utility":"false",
-	"version":"0.16.1",
-	"description":"Capture officers and negotiate",
-    "gameVersion": "0.97a",
-  	"jars":["jars/TakeNoPrisoners.jar"],
-  	"modPlugin":"takenoprisoners.TakeNoPrisonersModPlugin",
-	"dependencies": [
-        {
-            "id": "MagicLib",
-            "name": "MagicLib"
-        },
-		{
-			"id": "lw_lazylib",
-			"name": "LazyLib"
-		}
+	"version":"0.0.1",
+	"description":"Allows you to capture officers and interact with them. A successor fork of Take No Prisoners, taken from a version free of malware. Currently there are no additional or altered features.",
+    "gameVersion": "0.97a-RC6",
+  	"jars":["jars/ExtraordinaryRendition-v0.0.1.jar"],
+  	"modPlugin":"ExtraordinaryRendition.ExtraordinaryRenditionModPlugin",
+	  	"dependencies": [
+        #{
+        #    "id": "lw_lazylib",
+        #    "name": "LazyLib",
+        #    #"version": "2.7b"
+        #},
+        #{
+        #    "id": "MagicLib",
+        #    "name": "MagicLib",
+        #    #"version": "0.34"
+        #},
+        #{
+        #    "id": "shaderLib",
+        #    "name": "GraphicsLib",
+        #    #"version": "1.5.1"
+        #}
     ],
 }

@@ -1,11 +1,13 @@
 {
-  "TakeNoPrisoners": {
+  "ExtraordinaryRendition": {
     #setting this too high may permanently brick your save at some point in the future
     #if you then ping me about your save being bricked, you get added to the wall of shame
     "maxPrisoners": 15,
     
     #wall of shame:
-    #tim (lmao)
+    #tim (lmao),
+
+    #  "potatoNote": I have no idea why tim, presumably meaning Timid, is on this list.
 
     "factionsWithConfigs": [
       "tritachyon",

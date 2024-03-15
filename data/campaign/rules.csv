@@ -1,5 +1,5 @@
 id,trigger,conditions,script,text,options,notes
-"#RULESET_NAME TakeNoPrisoners",,,,,,
+"#RULESET_NAME ExtraordinaryRendition",,,,,,
 TNP_PickAndOpenPrisonerDialog,OpenInteractionDialog,"$coff_isprisoner score:10000
 !$coff_dialogpicked","$coff_dialogpicked = true
 TNP_CalcBribePrice
