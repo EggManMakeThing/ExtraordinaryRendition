@@ -1,5 +1,6 @@
 package ExtraordinaryRendition.campaign.rulecmd;
 
+import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.InteractionDialogAPI;
 import com.fs.starfarer.api.campaign.rules.MemoryAPI;
 import com.fs.starfarer.api.util.Misc;
@@ -11,8 +12,9 @@ import java.util.Map;
 public class ExtraordinaryRendition_HireActivePerson extends ExtraordinaryRenditionCommandPlugin {
     @Override
     public boolean execute(String ruleId, InteractionDialogAPI dialog, List<Misc.Token> params, Map<String, MemoryAPI> memoryMap) {
-        new HireAction(dialog).execute(getInteractionTargetPerson(dialog));
+        //new HireAction(dialog).execute(getActivePerson(dialog));
 
+        new HireAction(dialog).execute(Global.getSector().getPlayerFleet().getActivePerson());
         return true;
     }
 }

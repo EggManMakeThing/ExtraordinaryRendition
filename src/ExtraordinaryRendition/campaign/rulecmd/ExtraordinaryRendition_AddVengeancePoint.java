@@ -1,6 +1,7 @@
 package ExtraordinaryRendition.campaign.rulecmd;
 
 import ExtraordinaryRendition.campaign.VengeanceFleetHandler;
+import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.InteractionDialogAPI;
 import com.fs.starfarer.api.campaign.rules.MemoryAPI;
 import com.fs.starfarer.api.util.Misc;
@@ -15,7 +16,9 @@ public class ExtraordinaryRendition_AddVengeancePoint extends ExtraordinaryRendi
             InteractionDialogAPI dialog,
             List<Misc.Token> params,
             Map<String, MemoryAPI> memoryMap) {
-        String factionId = getInteractionTargetPerson(dialog).getFaction().getId();
+//        String factionId = getActivePerson(dialog).getFaction().getId();
+        String factionId = Global.getSector().getPlayerFleet().getActivePerson().getFaction().getId();
+
         VengeanceFleetHandler.INSTANCE.addVengeancePoint(factionId);
         return true;
     }

@@ -26,7 +26,8 @@ public class ExtraordinaryRendition_AddRandomTriTachyonLoan extends Extraordinar
         TriTachLoanIntel intel = new TriTachLoanIntel(event, targetMarket);
         Global.getSector().getIntelManager().addIntel(intel, false, dialog.getTextPanel());
 
-        getInteractionTargetPerson(dialog).getMemoryWithoutUpdate().set("$coff_loanIntel", intel);
+        dialog.getInteractionTarget().getActivePerson().getMemoryWithoutUpdate().set("$coff_loanIntel", intel);
+       // getActivePerson(dialog).getMemoryWithoutUpdate().set("$coff_loanIntel", intel);
         return true;
     }
 

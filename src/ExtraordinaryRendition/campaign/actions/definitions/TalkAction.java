@@ -121,6 +121,7 @@ public class TalkAction extends PrisonersDialogDelegate.ActionDefinitionImpl {
         @Override
         public void init(InteractionDialogAPI dialog) {
             if (person != null) {
+
                 dialog.getInteractionTarget().setActivePerson(person);
                 person = null;
             }
