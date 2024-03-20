@@ -1,7 +1,6 @@
-package ExtraordinaryRendition.campaign.rulecmd;
+package takenoprisoners.campaign.rulecmd;
 
 import ExtraordinaryRendition.utils.Strings;
-import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.InteractionDialogAPI;
 import com.fs.starfarer.api.campaign.rules.MemoryAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
@@ -10,12 +9,11 @@ import com.fs.starfarer.api.util.Misc;
 import java.util.List;
 import java.util.Map;
 
-public class ExtraordinaryRendition_CalcRansomPrice extends ExtraordinaryRenditionCommandPlugin {
+public class ExtraordinaryRendition_CalcRansomPrice extends ExtraordinaryRendition.campaign.rulecmd.ExtraordinaryRenditionCommandPlugin {
     @Override
     public boolean execute(String ruleId, InteractionDialogAPI dialog, List<Misc.Token> params, Map<String, MemoryAPI> memoryMap) {
 
-        PersonAPI person = Global.getSector().getPlayerFleet().getActivePerson();
-        //PersonAPI person = getActivePerson(dialog);
+        PersonAPI person = getActivePerson(dialog);
 
         float creditCost = getCreditCost(person);
 

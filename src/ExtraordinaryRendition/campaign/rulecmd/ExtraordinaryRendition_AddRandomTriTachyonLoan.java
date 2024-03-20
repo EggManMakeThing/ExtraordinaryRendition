@@ -12,10 +12,10 @@ import com.fs.starfarer.api.util.Misc;
 import java.util.List;
 import java.util.Map;
 
-public class ExtraordinaryRendition_AddRandomTriTachyonLoan extends ExtraordinaryRenditionCommandPlugin {
+public class ExtraordinaryRendition_AddRandomTriTachyonLoan extends ExtraordinaryRendition.campaign.rulecmd.ExtraordinaryRenditionCommandPlugin {
     @Override
     public boolean execute(String ruleId, InteractionDialogAPI dialog, List<Misc.Token> params, Map<String, MemoryAPI> memoryMap) {
-        MarketAPI targetMarket = TNP_GetRandomCloseMarketForFaction.get(Factions.TRITACHYON);
+        MarketAPI targetMarket = takenoprisoners.campaign.rulecmd.ExtraordinaryRendition_GetRandomCloseMarketForFaction.get(Factions.TRITACHYON);
 
         TriTachLoanEvent event = new TriTachLoanEvent();
         event.publicRegen(targetMarket);
@@ -26,8 +26,7 @@ public class ExtraordinaryRendition_AddRandomTriTachyonLoan extends Extraordinar
         TriTachLoanIntel intel = new TriTachLoanIntel(event, targetMarket);
         Global.getSector().getIntelManager().addIntel(intel, false, dialog.getTextPanel());
 
-        dialog.getInteractionTarget().getActivePerson().getMemoryWithoutUpdate().set("$coff_loanIntel", intel);
-       // getActivePerson(dialog).getMemoryWithoutUpdate().set("$coff_loanIntel", intel);
+        getActivePerson(dialog).getMemoryWithoutUpdate().set("$coff_loanIntel", intel);
         return true;
     }
 

@@ -1,4 +1,4 @@
-package ExtraordinaryRendition.campaign.rulecmd;
+package takenoprisoners.campaign.rulecmd;
 
 import ExtraordinaryRendition.utils.NeverendingChaseScript;
 import ExtraordinaryRendition.utils.Strings;
@@ -20,7 +20,7 @@ import org.magiclib.campaign.MagicFleetBuilder;
 import java.util.List;
 import java.util.Map;
 
-public class TNP_SendRelentlessBountyHunters extends BaseCommandPlugin {
+public class ExtraordinaryRendition_SendRelentlessBountyHunters extends BaseCommandPlugin {
     @Override
     public boolean execute(String ruleId, InteractionDialogAPI dialog, List<Misc.Token> params, Map<String, MemoryAPI> memoryMap) {
         String factionId = params.get(0).getString(memoryMap);

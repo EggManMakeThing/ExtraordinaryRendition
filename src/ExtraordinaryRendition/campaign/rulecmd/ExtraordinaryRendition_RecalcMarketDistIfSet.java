@@ -1,4 +1,4 @@
-package ExtraordinaryRendition.campaign.rulecmd;
+package takenoprisoners.campaign.rulecmd;
 
 import ExtraordinaryRendition.campaign.Searcher;
 import ExtraordinaryRendition.utils.Strings;
@@ -12,7 +12,7 @@ import com.fs.starfarer.api.util.Misc;
 import java.util.List;
 import java.util.Map;
 
-public class TNP_RecalcMarketDistIfSet extends BaseCommandPlugin {
+public class ExtraordinaryRendition_RecalcMarketDistIfSet extends BaseCommandPlugin {
     @Override
     public boolean execute(String ruleId, InteractionDialogAPI dialog, List<Misc.Token> params, Map<String, MemoryAPI> memoryMap) {
         MarketAPI market = Searcher.INST.getMarket(memoryMap.get(MemKeys.LOCAL).getString(Strings.MARKET_MEMKEY));
