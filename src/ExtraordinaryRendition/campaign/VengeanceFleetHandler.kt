@@ -15,7 +15,7 @@ import org.magiclib.campaign.MagicFleetBuilder
 import java.awt.Color
 
 object VengeanceFleetHandler {
-    val VENGEANCE_KEY = "TNP_VengeancePointsMap"
+    val VENGEANCE_KEY = "ExtraordinaryRendition_VengeancePointsMap"
     fun loadVengeancePoints(): MutableMap<String, Int> {
         var vengeanceMap: MutableMap<String, Int>? = Global.getSector().persistentData[VENGEANCE_KEY] as MutableMap<String, Int>?
         if (vengeanceMap == null) {

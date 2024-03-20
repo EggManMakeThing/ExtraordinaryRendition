@@ -1,4 +1,4 @@
-package takenoprisoners.campaign.rulecmd;
+package ExtraordinaryRendition.campaign.rulecmd;
 
 import ExtraordinaryRendition.campaign.Searcher;
 import ExtraordinaryRendition.utils.Strings;

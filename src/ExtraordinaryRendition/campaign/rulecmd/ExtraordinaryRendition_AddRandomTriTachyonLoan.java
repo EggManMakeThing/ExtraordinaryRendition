@@ -15,7 +15,7 @@ import java.util.Map;
 public class ExtraordinaryRendition_AddRandomTriTachyonLoan extends ExtraordinaryRendition.campaign.rulecmd.ExtraordinaryRenditionCommandPlugin {
     @Override
     public boolean execute(String ruleId, InteractionDialogAPI dialog, List<Misc.Token> params, Map<String, MemoryAPI> memoryMap) {
-        MarketAPI targetMarket = takenoprisoners.campaign.rulecmd.ExtraordinaryRendition_GetRandomCloseMarketForFaction.get(Factions.TRITACHYON);
+        MarketAPI targetMarket = ExtraordinaryRendition_GetRandomCloseMarketForFaction.get(Factions.TRITACHYON);
 
         TriTachLoanEvent event = new TriTachLoanEvent();
         event.publicRegen(targetMarket);

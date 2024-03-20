@@ -1,4 +1,4 @@
-package takenoprisoners.campaign.rulecmd;
+package ExtraordinaryRendition.campaign.rulecmd;
 
 import ExtraordinaryRendition.campaign.actions.definitions.HireAction;
 import com.fs.starfarer.api.campaign.InteractionDialogAPI;

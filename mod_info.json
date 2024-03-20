@@ -1,7 +1,7 @@
 {
     "id":"ExtraordinaryRendition", # For the convenience of troubleshooters, include your name and the mod name, not just an acronym.
 	"name":"Extraordinary Rendition", # Displayed to the player
-	"author":"potatomonitor, at least temporarily",
+	"author":"N/A",
     "utility":"false",
 	"version":"0.0.1",
 	"description":"Allows you to capture officers and interact with them. A successor fork of Take No Prisoners, taken from a version free of malware. Currently there are no additional or altered features.",

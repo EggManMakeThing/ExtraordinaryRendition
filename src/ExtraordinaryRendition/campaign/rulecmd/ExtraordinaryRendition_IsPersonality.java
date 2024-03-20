@@ -1,4 +1,4 @@
-package takenoprisoners.campaign.rulecmd;
+package ExtraordinaryRendition.campaign.rulecmd;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.InteractionDialogAPI;

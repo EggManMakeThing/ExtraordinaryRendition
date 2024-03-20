@@ -39,7 +39,7 @@ public class CampaignEventListener extends BaseCampaignEventListener {
         FactionConfiguration config = FactionConfigurationLoader.getFactionConfig(loserSide.getFleet().getFaction().getId());
         if (config == null) return;
 
-        log.info("TNP - Engagement ended. Processing enemy fleet now.");
+        log.info("ExtraRe - Engagement ended. Processing enemy fleet now.");
 
 
         PersonAPI fleetCommander = loserSide.getFleet().getCommander();
@@ -74,9 +74,9 @@ public class CampaignEventListener extends BaseCampaignEventListener {
                         || Math.random() <= recoveryChance) {
 
                     if (isCommander) {
-                        log.info("TNP - Added enemy fleet commander as prisoner.");
+                        log.info("ExtraRe - Added enemy fleet commander as prisoner.");
                     } else {
-                        log.info("TNP - Added enemy officer as prisoner.");
+                        log.info("ExtraRe - Added enemy officer as prisoner.");
                     }
                     ExtraordinaryRenditionModPlugin.addPerson(captain);
                 }
@@ -95,17 +95,17 @@ public class CampaignEventListener extends BaseCampaignEventListener {
             }
 
             if (person.hasTag(Strings.NO_CAPTURE_TAG)) {
-                log.info("TNP - Person has blocking capture tag.");
+                log.info("ExtraRe - Person has blocking capture tag.");
                 return false;
             }
 
             if (person.hasTag(Strings.FORCE_CAPTURE_TAG)) {
-                log.info("TNP - Person has force capture tag.");
+                log.info("ExtraRe - Person has force capture tag.");
                 return true;
             }
 
             if (Global.getSector().getImportantPeople().getPerson(person.getId()) != null) {
-                log.info("TNP - Person was important.");
+                log.info("ExtraRe - Person was important.");
                 return false;
             }
 
